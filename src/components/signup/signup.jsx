@@ -18,7 +18,7 @@ export default function Signup() {
         const { name, email, password, reEnterPassword } = user
         if (name && email && password && password === reEnterPassword) {
             // alert("posted");
-            axios.post("http://localhost:9002/signup", user)
+            axios.post("https://login-backend-yiba.onrender.com/signup", user)
                 .then(res => {
                     alert(res.data.message);
                     res.data.message==="User already registered" ? navigate("/signup") : navigate("/login");
