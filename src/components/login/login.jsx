@@ -21,6 +21,10 @@ export default function Login({setLoginUser}){
         })
     }
 
+    const ReactComment = ({ text }) => {
+        return <div dangerouslySetInnerHTML={{ __html: `<!-- ${text} -->` }}/>
+      }
+
     const handleChange = e => {
         const {name,value} = e.target;
 
@@ -36,6 +40,7 @@ export default function Login({setLoginUser}){
             <input type="text" name="email" value={user.email} placeholder="Enter your Email" onChange={handleChange}></input>
             <input type="password" name="password" value={user.password}  placeholder="Enter your Password" onChange={handleChange}></input>
             <div className="button" onClick={login}>Login</div>
+            <ReactComment text={'My beautiful HTML comment'}/>
             {/* <div>or</div>
             <div className="button" onClick={() => navigate("/signup")}>Register</div> */}
         </div>
