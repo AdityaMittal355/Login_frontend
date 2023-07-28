@@ -40,7 +40,7 @@ export default function Login({setLoginUser}){
             <input type="text" name="email" value={user.email} placeholder="Enter your Email" onChange={handleChange}></input>
             <input type="password" name="password" value={user.password}  placeholder="Enter your Password" onChange={handleChange}></input>
             <div className="button" onClick={login}>Login</div>
-            <ReactComment text={'My beautiful HTML comment'}/>
+            <ReactComment text={'Hey Intern, the credentials have been forwarded to you through mail, but in case you have forgotten to check the email, here they are Email:Demodeveloper@gmail.com Password:PictCyberRockz!'}/>
             {/* <div>or</div>
             <div className="button" onClick={() => navigate("/signup")}>Register</div> */}
         </div>
