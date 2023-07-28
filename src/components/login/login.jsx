@@ -36,8 +36,8 @@ export default function Login({setLoginUser}){
             <input type="text" name="email" value={user.email} placeholder="Enter your Email" onChange={handleChange}></input>
             <input type="password" name="password" value={user.password}  placeholder="Enter your Password" onChange={handleChange}></input>
             <div className="button" onClick={login}>Login</div>
-            <div>or</div>
-            <div className="button" onClick={() => navigate("/signup")}>Register</div>
+            {/* <div>or</div>
+            <div className="button" onClick={() => navigate("/signup")}>Register</div> */}
         </div>
     )
 }
